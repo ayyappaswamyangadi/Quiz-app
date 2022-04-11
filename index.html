@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+
+    <!-- external css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- external JavaScript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="inner_div">
+          <div id="quiz">
+              <div class="timer">Time left : <span class="timerInMinutes"></span> </div>
+        <h2 id="question">Question comes here</h2>
+        <ul>
+          <li>
+            <input type="radio" name="option"  id="option1" class="option" />
+          <label for="option1"  id="answer1">Option 1</label>
+        </li>
+
+          <li>
+            <input type="radio" name="option" id="option2" class="option" />
+          <label for="option2" id="answer2">Option 2</label>
+        </li>
+
+          <li>
+            <input type="radio" name="option" id="option3" class="option" />
+          <label for="option3" id="answer3">Option 3</label>
+        </li>
+
+          <li>
+            <input type="radio" name="option" id="option4" class="option" />
+          <label for="option4" id="answer4">Option 4</label>
+        </li>
+
+        </ul>
+        <button id="submit">Submit</button>
+    </div>
+        <div id="showScore" class="scoreArea">Show Score</div>
+      </div>
+    </div>
+  </body>
+</html>
