@@ -8,7 +8,7 @@ const AllQuestions = [{
 },
 
 {
-    question: "Q2 : The named character entity for a copyright symbol is ?",
+    question: `Q2 : The named character entity for a copyright symbol is?`,
     a: "©",
     b: "&nbsp;",
     c: " Not used",
@@ -137,6 +137,8 @@ submit.addEventListener('click', () => {
         minutes  = Math.floor((totalTime - counter)/60);
         seconds = totalTime - (minutes * 60) - counter;
     let timerInMinutes = document.querySelector('.timerInMinutes');
+
+
     timerInMinutes.innerHTML = `${minutes > 9 ? minutes : '0' + minutes} :  ${seconds > 9 ? seconds : '0' + seconds}`
 
     if(counter == totalTime){

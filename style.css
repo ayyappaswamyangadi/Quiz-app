@@ -5,21 +5,24 @@
     list-style-type: none;
 }
 
+body{
+    background: linear-gradient(rgb(173, 216, 230), rgba(173, 216, 230, 0.8), rgba(173, 216, 230, 0.5), rgba(173, 216, 230, 0.2));
+
+}
+
 .main_div{
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background: linear-gradient(rgb(173, 216, 230), rgba(173, 216, 230, 0.8), rgba(173, 216, 230, 0.5), rgba(173, 216, 230, 0.2));
 }
 
 .inner_div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 40vw;
-    height: 50vh;
+    width: 50%;
+    height: 50%;
     background-color: white;
     padding: 10px 20px;
     border-radius: 25px;
@@ -31,13 +34,17 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     /* text-align: center; */
-    margin: 15px;
+    padding-left: 2em;
+    text-indent: -2em;
     font-size: 30px;
 }
+
 
 .inner_div li{
     font-size: 20px;
     margin: 10px 0;
+    padding-left: 3em;
+    text-indent: -1em;
 }
 
 .timer{
@@ -47,6 +54,7 @@
     border-radius: 30px;
     font-size: 18px;
     font-weight: bold;
+    margin-right: 50px;
 }
 
 input{
@@ -63,12 +71,13 @@ input{
     border: none;
     text-transform: uppercase;
     color: white;
-    background: royalblue;
+    background: rgba(65, 105, 225, 0.9);
     cursor: pointer;
 }
 
+
 #submit:hover{
-    background: rgba(65, 105, 225, 0.8);
+    background: royalblue;
 }
 
 #showScore{
@@ -86,4 +95,50 @@ input{
 #showScore h3{
     font-size: 30px;
     text-align: center;
+}
+@media (max-width:300px) {
+    .main_div{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .inner_div{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (min-width:301px) and (max-width:550px) {
+
+    .inner_div{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (min-width:551px) and (max-width:750px) {
+    .inner_div{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (min-width:751px) and (max-width:950px) {
+    .inner_div{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media (max-width:750px) {
+    .timer{
+        float: none;
+    }
+    
+    .quizTimer{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -50px;
+    }
+
 }
