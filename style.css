@@ -24,16 +24,19 @@ body{
     width: 50%;
     height: 50%;
     background-color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 25px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+#quiz{
+    overflow-y: auto;
 }
 
 #question{
     background: linear-gradient(to right, red, yellow);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    /* text-align: center; */
     padding-left: 2em;
     text-indent: -2em;
     font-size: 30px;
@@ -54,7 +57,6 @@ body{
     border-radius: 30px;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 50px;
 }
 
 input{
@@ -82,7 +84,7 @@ input{
 
 #showScore{
     background: lightblue;
-    margin-top: 15px;
+    margin-top: 25px;
     border-radius: 0 0 15px 15px;
     padding: 20px;
     text-align: center;
@@ -96,20 +98,8 @@ input{
     font-size: 30px;
     text-align: center;
 }
-@media (max-width:300px) {
-    .main_div{
-        width: 100vw;
-        height: 100vh;
-    }
 
-    .inner_div{
-        width: 90%;
-        height: 90%;
-    }
-}
-
-@media (min-width:301px) and (max-width:550px) {
-
+@media (max-width:550px) {
     .inner_div{
         width: 90%;
         height: 90%;
@@ -118,14 +108,14 @@ input{
 
 @media (min-width:551px) and (max-width:750px) {
     .inner_div{
-        width: 70%;
+        width: 80%;
         height: 70%;
     }
 }
 
 @media (min-width:751px) and (max-width:950px) {
     .inner_div{
-        width: 60%;
+        width: 70%;
         height: 60%;
     }
 }
@@ -138,7 +128,7 @@ input{
     .quizTimer{
         display: flex;
         justify-content: flex-end;
-        margin-right: -50px;
+        margin-bottom: 15px;
     }
 
 }
